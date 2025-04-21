@@ -36,7 +36,7 @@ const Signup = () => {
   };
 
   useEffect(() => {
-    if (login) {
+    if (!login) {
       setName(firstName);
     }
   }, [login]);

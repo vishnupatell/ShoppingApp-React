@@ -10,7 +10,7 @@ const CartProvider = ({children})=>{
                 let alreadyPresent =  state.some((item) => item.id === action.payload.id)
                 if(alreadyPresent){
                     toast.error("Item already in the cart");
-                    return state
+                    return state;
                 }
               return [
                     ...state, action.payload
